@@ -1,0 +1,148 @@
+/* Estilos generales */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que el body use flex para centrar el contenido */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado a min-height para permitir el scroll */
+    background-color: #f0f0f0;
+    overflow: auto; /* Permite el desplazamiento */
+}
+
+/* Contenedor de tableros */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los tableros se envuelvan en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre los tableros */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+}
+
+/* Estilo para cada tablero */
+.tablero {
+    padding: 20px;
+    margin: 50px;
+    flex: 1; /* Permite que los tableros se ajusten automáticamente */
+    max-width: 450px; /* Limita el ancho máximo */
+}
+
+#bingo-1, #bingo-2, #bingo-3, #bingo-4 {
+    width: 100%; /* Usa el ancho completo del contenedor del tablero */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 5px;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+/* Estilo de las letras en el tablero */
+.letras {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    border: solid black 2px;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo de las celdas del tablero */
+.cuadrado-numero {
+    width: 100%;
+    max-width: 40px; /* Reduce el tamaño máximo */
+    height: 40px; /* Asegura que las celdas sean cuadradas */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Efecto hover en las celdas */
+.cuadrado-numero:hover {
+    transform: scale(1.1);
+    background-color: #ddd;
+}
+
+/* Estilo de la grilla */
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* Estilos para las columnas */
+.b-columna {
+    background-color: #ffeb3b;
+}
+
+.i-columna {
+    background-color: #ff80ab;
+}
+
+.n-columna {
+    background-color: #b2ff59;
+}
+
+.g-columna {
+    background-color: #ff8a80;
+}
+
+.o-columna {
+    background-color: #84ffff;
+}
+
+/* Colores para las X */
+.color-x1, .X1, .X2, .X3 {
+    background-color: #f43636;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%; /* Asegura que el contenedor se ajuste en pantallas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: 10px; /* Reduce el espacio entre los tableros en pantallas más pequeñas */
+    }
+
+    #bingo-1, #bingo-2, #bingo-3, #bingo-4 {
+        width: 100%; /* Usa el ancho completo del contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadrado-numero {
+        max-width: 30px; /* Reduce aún más el tamaño máximo de las celdas */
+        height: 30px; /* Ajusta la altura de las celdas */
+        font-size: 12px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #bingo-1, #bingo-2, #bingo-3, #bingo-4 {
+        width: 100%; /* Usa el ancho completo del contenedor */
+    }
+
+    .container {
+        gap: 5px; /* Reduce el espacio entre los tableros en pantallas muy pequeñas */
+    }
+}
