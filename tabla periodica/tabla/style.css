@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .elemento{
     width: 155px;
     height: 155px;
@@ -110,3 +111,117 @@ p{
 
 
 
+=======
+.elemento{
+    width: 155px;
+    height: 155px;
+    border-radius: 10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.izquierda{
+    float: left;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.derecha{
+    text-align: right;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.config{
+    line-height: 15px;
+}
+.titulo{
+    text-align: center;
+}
+.waos{
+    border: 2px solid rgba(255, 255, 255, 0);
+    width: 155px;
+    height: 155px;
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.uwuxd td{
+    padding: 0px;
+    border: 0.1px solid white;
+}
+.centro{
+    float: right;
+    text-align: center;
+}
+.elemento-1{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:coral
+}
+.elemento-2{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(238, 241, 53)
+}
+.elemento-3{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(177, 71, 238)
+}
+.elemento-4{
+    width: 155px;
+    height: 155px;
+
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(238, 71, 230)
+}
+.elemento-5{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(238, 185, 71)
+}
+.elemento-6{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(252, 231, 49)
+}
+.elemento-7{
+    width: 155px;
+    height: 155px;
+    border-radius:10px;
+    border: 2px solid black;   
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(138, 238, 71)
+}
+p{
+    margin-top: 10px;
+    line-height: 0.1;
+}
+
+
+
+>>>>>>> 9ce6aed9e7fab72d3c48565bdeda2e23dca639f4
